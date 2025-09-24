@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 12:54:37 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/24 15:17:20 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/24 18:58:51 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,10 @@ Bureaucrat	&Bureaucrat::operator=(const Bureaucrat &copy)
 	return (*this);
 }
 
-Bureaucrat::~Bureaucrat() {}
+Bureaucrat::~Bureaucrat() 
+{
+	std::cout << "Bureaucrat destructed\n";
+}
 
 const std::string	&Bureaucrat::getName() const
 {
