@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 13:52:49 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/24 18:59:55 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/24 15:41:13 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	main()
 	}
 	catch(const std::exception	&e)
 	{
-		std::cerr << e.what() << std::endl;
+		std::cout << e.what() << "\n";
 	}
 	
 	return (0);
