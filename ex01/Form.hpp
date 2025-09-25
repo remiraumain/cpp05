@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 15:58:42 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/24 17:59:37 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/25 09:08:57 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ class Form
 
 		const std::string	&getName() const;
 		bool				getSigned() const;
-		const int			&getSignGrade() const;
-		const int			&getExecGrade() const;
+		int					getSignGrade() const;
+		int					getExecGrade() const;
 
 		void	beSigned(const Bureaucrat &b);
 

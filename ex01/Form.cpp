@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:10:26 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/24 18:54:10 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/25 09:08:51 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,12 +80,12 @@ bool	Form::getSigned() const
 	return (_signed);
 }
 
-const int	&Form::getSignGrade() const
+int	Form::getSignGrade() const
 {
 	return (_signGrade);
 }
 
-const int	&Form::getExecGrade() const
+int	Form::getExecGrade() const
 {
 	return (_execGrade);
 }
