@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:10:26 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/25 09:08:51 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/30 15:30:26 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,7 @@ std::ostream	&operator<<(std::ostream &os, const Form &f)
 	<< std::setw(10) << f.getName() << "|"
 	<< std::setw(10) << f.getSigned() << "|"
 	<< std::setw(10) << f.getSignGrade() << "|"
-	<< std::setw(10) << f.getExecGrade() << "|"
-	<< std::endl;
+	<< std::setw(10) << f.getExecGrade() << "|";
 	
 	return (os);
 }
