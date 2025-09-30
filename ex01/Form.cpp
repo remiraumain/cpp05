@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:10:26 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/30 15:30:26 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/30 16:53:22 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ int	Form::getExecGrade() const
 void	Form::beSigned(const Bureaucrat &b)
 {
 	if (_signed)
-		return ;
+		throw(std::logic_error("Form: already signed"));
 	if (_signGrade < b.getGrade())
 		throw(GradeTooLowException());
 	_signed = true;
