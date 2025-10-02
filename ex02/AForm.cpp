@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 09:49:13 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/30 17:24:53 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 10:24:57 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ void	AForm::execute(const Bureaucrat &executor) const
 {
 	if (!_signed)
 		throw(std::logic_error("Form: not signed"));
-	if (_signGrade < executor.getGrade() || _execGrade < executor.getGrade())
+	if ( _execGrade < executor.getGrade())
 		throw(GradeTooLowException());
 	action();
 }
