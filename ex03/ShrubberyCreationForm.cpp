@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:25:02 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/02 17:48:53 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 17:47:41 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ ShrubberyCreationForm::ShrubberyCreationForm()
 	: AForm("ShrubberyCreationForm", 25, 5), _target("Default")
 {
 	std::cout << "ShrubberyCreationForm constructed\n";
-}
+};
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target)
 	: AForm("ShrubberyCreationForm", 145, 137), _target(target)

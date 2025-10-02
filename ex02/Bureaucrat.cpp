@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 12:54:37 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/02 14:31:51 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 17:48:12 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ std::ostream	&operator<<(std::ostream &os, const Bureaucrat &b)
 	return (os << b.getName() << ", bureaucrat grade " << b.getGrade());
 }
 
-Bureaucrat::Bureaucrat() : _name("Default"), _grade(150) {}
+Bureaucrat::Bureaucrat() : _name("Default"), _grade(150)
+{
+	std::cout << "Bureaucrat constructed\n";
+}
 
 Bureaucrat::Bureaucrat(const std::string &name, int grade) : _name(name)
 {
