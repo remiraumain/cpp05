@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:25:02 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/30 20:08:59 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 10:48:32 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void ShrubberyCreationForm::action() const
 {
 	std::ofstream	outfile((_target + "_shrubbery").c_str());
 	if (!outfile)
-    	throw(std::runtime_error("failed to open shrubbery file"));
+    	throw(std::runtime_error("ShrubberyCreationForm: failed to open shrubbery file"));
 	
 	outfile << "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠖⠒⠢⣄⣀⡀⣀⣀⠀⡠⠔⠒⠒⢤⡀⠀⠀⠀      \n";
 	outfile << "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⡇⠀⠀⠀⠁⠠⡋⠀⠀⠙⠦⠀⠀⠀⠀⣧⠤⣀⠀⠀⠀⠀   \n";
