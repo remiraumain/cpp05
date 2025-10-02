@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "RobotomyRequestForm.hpp"
+#include <iostream>
 #include <cstdlib>
 #include <ctime>
 
@@ -50,7 +51,7 @@ void RobotomyRequestForm::action() const
 	if (isSuccess)
 	{
 		std::cout << "*BZZZZZZ*\n" << "*SKRRRRRR*\n"
-			<< _target << " has been robotomized successfull\n"; 
+		<< _target << " has been robotomized successfull\n"; 
 	}
 	else 
 		throw(std::logic_error("RobotomyRequestForm: unfortunately the hodes were not by your side"));

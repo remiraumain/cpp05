@@ -10,11 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SHRUBBERY_CREATION_FORM_HPP
-# define SHRUBBERY_CREATION_FORM_HPP
+#ifndef ROBOTOMY_REQUEST_FORM_HPP
+# define ROBOTOMY_REQUEST_FORM_HPP
 
 # include "AForm.hpp"
-# include <iostream>
 
 class RobotomyRequestForm : public AForm
 {

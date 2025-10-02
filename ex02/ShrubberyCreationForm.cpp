@@ -6,11 +6,12 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 18:25:02 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/02 10:48:32 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 10:52:59 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
+#include <iostream>
 #include <fstream>
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target)

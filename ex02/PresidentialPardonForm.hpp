@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ShrubberyCreationForm.hpp                          :+:      :+:    :+:   */
+/*   PresidentialPardonForm.hpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 09:53:32 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/02 10:52:15 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/30 20:03:11 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SHRUBBERY_CREATION_FORM_HPP
-# define SHRUBBERY_CREATION_FORM_HPP
+#ifndef PRESIDENTIAL_PARDON_FORM_HPP
+# define PRESIDENTIAL_PARDON_FORM_HPP
 
 # include "AForm.hpp"
 
-class ShrubberyCreationForm : public AForm
+class PresidentialPardonForm : public AForm
 {
 	public:
-		ShrubberyCreationForm(const std::string &target);
-		ShrubberyCreationForm(const ShrubberyCreationForm &copy);
-		ShrubberyCreationForm	&operator=(const ShrubberyCreationForm &copy);
-		~ShrubberyCreationForm();
+		PresidentialPardonForm(const std::string &target);
+		PresidentialPardonForm(const PresidentialPardonForm &copy);
+		PresidentialPardonForm	&operator=(const PresidentialPardonForm &copy);
+		~PresidentialPardonForm();
 
 	protected:
 		void	action() const;
