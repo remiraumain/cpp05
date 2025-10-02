@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 13:01:48 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/24 15:17:15 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 14:31:26 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class Bureaucrat
 {
 	public:
+		Bureaucrat();
 		Bureaucrat(const std::string &name, int grade);
 		Bureaucrat(const Bureaucrat &copy);
 		Bureaucrat	&operator=(const Bureaucrat &copy);

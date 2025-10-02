@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 09:49:13 by rraumain          #+#    #+#             */
-/*   Updated: 2025/10/02 13:49:16 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 14:31:46 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ std::ostream	&operator<<(std::ostream &os, const AForm &f)
 	
 	return (os);
 }
+
+AForm::AForm() : _name("Default"), _signGrade(150), _execGrade(150) {};
 
 AForm::AForm(const std::string &name, const int signGrade, const int execGrade) :
 	_name(name),

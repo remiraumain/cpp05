@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 09:49:18 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/30 17:00:23 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/10/02 14:31:47 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Bureaucrat;
 class AForm
 {
 	public:
+		AForm();
 		AForm(const std::string &name, const int signGrade, const int execGrade);
 		AForm(const AForm &copy);
 		AForm	&operator=(const AForm &copy);
